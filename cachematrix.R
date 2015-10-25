@@ -25,7 +25,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 
-## It calculates  the inverse of a matrix
+## It calculates  the inverse of a matrix.It implements the caching technique.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
@@ -38,5 +38,5 @@ cacheSolve <- function(x, ...) {
   inv <- solve(data)
   x$setinverse(inv)
   inv
-  
+
 }
